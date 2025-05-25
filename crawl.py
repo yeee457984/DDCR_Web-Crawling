@@ -57,8 +57,8 @@ def fetch_article_content(article_url):
 # %%
 def fetch(page):
     page = str(page)
-    article_list = fetch_article_list(page)
     articles_dict = []
+    article_list = fetch_article_list(page)
     for article in article_list:
         url =  article['url']
         all_articles = fetch_article_content(url)

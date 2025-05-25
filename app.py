@@ -53,7 +53,7 @@ grouped_text = arti_data.groupby('forum')['title'].apply(lambda x: ' '.join(x)).
 
 # Dash App
 app = dash.Dash(__name__)
-server = app.server  # <-- 重點！給 gunicorn 用
+server = app.server
 
 app.layout = html.Div([
     html.H1('論壇文章文字雲分析'),
